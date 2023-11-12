@@ -7,3 +7,6 @@ Saturno
 Urano
 Neptuno
 Plutón
+
+Sol
+Estrellas
