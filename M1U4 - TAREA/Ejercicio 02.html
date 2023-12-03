@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/htm; charset=utf-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        const num1 = parseInt(prompt('Ingresá el primer valor numérico', ''));
+        const num2 = parseInt(prompt('Ingresá el segundo valor numérico', ''));
+        const num3 = parseInt(prompt('Ingresá el tercer valor numérico', ''));
+        
+if (Number.isNaN(num1)) {
+    document.write(`El número ingresado no es válido.`);}
+
+    if (Number.isNaN(num2)) {
+    document.write(`El número ingresado no es válido.`);}
+    
+if (Number.isNaN(num3)) {
+    document.write(`El número ingresado no es válido.`);}
+    
+    const números = [num1, num2, num3];
+
+        console.log(números);
+        console.log(números.length);
+
+        const primero = números[0];
+        console.log(primero)
+
+        const segundo = números[1];
+        console.log(segundo)
+
+        const último = números[números.length-1];
+        console.log(último)
+
+        if (num1 > num2 && num1 > num3) {
+            document.write(`El mayor es el ${num1}`);
+        } else if (num2 > num3)  {
+            document.write(`El mayor es el ${num2}`);
+        } else {
+            document.write(`El mayor es el ${num3}`);
+        }
+        
+        
+        for( let i = 0; i < números.length; i++){
+            console.log('Tenemos ' + números[i])
+       }
+
+
+    </script>    
+</body>
+</html>
