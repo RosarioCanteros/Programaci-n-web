@@ -1,0 +1,30 @@
+!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/htm; charset=utf-8" />
+    <title></title>
+</head>
+
+<body>
+    <script>
+      const nombre = prompt('Ingresá tu nombre:', '');
+        const distancia = parseInt(prompt('Ingresá la distancia en metros y en formato numérico que querés recorrer:', ''));
+
+        if (Number.isNaN(distancia)) {
+            document.write(`La distancia ingresada no es válida.`);
+        } else if (distancia >= 0 && distancia <= 1000) {
+            document.write(`¡Hola ${nombre}! el medio más apropiado para recorrer ${distancia} metros de distancia es A PIE.`);
+        } else if (distancia >= 1001 && distancia <= 10000) {
+            document.write(`¡Hola ${nombre}! el medio más apropiado para recorrer ${distancia} metros de distancia es LA BICICLETA.`);
+        } else if (distancia >= 10001 && distancia <= 30000) {
+            document.write(`¡Hola ${nombre}! el medio más apropiado para recorrer ${distancia} metros de distancia es EL COLECTIVO.`);
+        } else if (distancia >= 30001 && distancia <= 100000) {
+            document.write(`¡Hola ${nombre}! el medio más apropiado para recorrer ${distancia} metros de distancia es EL AUTO.`);
+        } else{
+            document.write(`¡Hola ${nombre}! el medio más apropiado para recorrer ${distancia} metros de distancia es EL AVIÓN.`);
+        }
+       
+    </script>
+    
+</body>
+</html>
